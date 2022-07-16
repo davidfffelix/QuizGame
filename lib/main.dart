@@ -38,7 +38,9 @@ class PerguntaApp extends StatelessWidget {
             ),
           ],
         ),
+        body: Text('Olá Flutter'),
       ),
     );
   }
 }
+
