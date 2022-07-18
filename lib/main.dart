@@ -24,7 +24,7 @@ class PerguntaApp extends StatelessWidget {
             Text(perguntas[0]),
             TextButton(
               child: Text('Resposta 1'),
-              onPressed: responder, // Passando a função como parêmetro
+              onPressed: responder,
             ),
             TextButton(
               child: Text('Resposta 2'),
