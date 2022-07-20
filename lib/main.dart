@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
 
-main() => runApp(PerguntaApp()); //Componente raÌz
+main() => runApp(PerguntaApp()); //Componente ra√≠z
 
-class PerguntaApp extends StatelessWidget {
+class PerguntaAppState extends State<PerguntaApp> { // Conex√£o entre estado e o Stateful e controle do estado do componente Stateful.
   var perguntaSelecionada = 0;
 
   void responder() {
     perguntaSelecionada++;
     print(perguntaSelecionada);
   }
+}
+
+class PerguntaApp extends StatefulWidget {
+
+
+
 
   @override
   Widget build(BuildContext context) {
     final List<String> perguntas = [
-      'Qual È sua cor favorita?',
-      'Qual È seu animal favorito?',
+      'Qual √© sua cor favorita?',
+      'Qual √© seu animal favorito?',
     ];
 
     return MaterialApp(
