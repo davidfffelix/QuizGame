@@ -2,19 +2,15 @@ import 'package:flutter/material.dart';
 
 main() => runApp(PerguntaApp()); //Componente raíz
 
-class PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e o Stateful e controle do estado do componente Stateful.
+class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e o Stateful e controle do estado do componente Stateful.
   var perguntaSelecionada = 0;
 
   void responder() {
-    perguntaSelecionada++;
+    setState((){
+      perguntaSelecionada++;
+    });
     print(perguntaSelecionada);
   }
-}
-
-class PerguntaApp extends StatefulWidget {
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -47,5 +43,11 @@ class PerguntaApp extends StatefulWidget {
         ),
       ),
     );
+  }
+}
+
+class PerguntaApp extends StatefulWidget {
+  _PerguntaAppState createState() {
+    return _PerguntaAppState();
   }
 }
