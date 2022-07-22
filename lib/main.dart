@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 main() => runApp(PerguntaApp()); //Componente raíz
 
 class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e o Stateful e controle do estado do componente Stateful.
-  var perguntaSelecionada = 0;
+  var _perguntaSelecionada = 0;
 
-  void responder() {
+  void _responder() {
     setState((){
-      perguntaSelecionada++;
+      _perguntaSelecionada++;
     });
-    print(perguntaSelecionada);
+    print(_perguntaSelecionada);
   }
 
   @override
@@ -26,18 +26,18 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         ),
         body: Column(
           children: [
-            Text(perguntas[perguntaSelecionada]),
+            Text(perguntas[_perguntaSelecionada]),
             TextButton(
               child: Text('Resposta 1'),
-              onPressed: responder,
+              onPressed: _responder,
             ),
             TextButton(
               child: Text('Resposta 2'),
-              onPressed: responder,
+              onPressed: _responder,
             ),
             TextButton(
               child: Text('Resposta 3'),
-              onPressed: responder,
+              onPressed: _responder,
             ),
           ],
         ),
