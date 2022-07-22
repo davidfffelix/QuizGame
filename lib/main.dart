@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizgame/questao.dart';
 
 main() => runApp(PerguntaApp()); //Componente raíz
 
@@ -26,7 +27,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         ),
         body: Column(
           children: [
-            Text(perguntas[_perguntaSelecionada]),
+            Questao(perguntas[_perguntaSelecionada]),
             TextButton(
               child: Text('Resposta 1'),
               onPressed: _responder,
