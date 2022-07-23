@@ -8,6 +8,8 @@ class Questao extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(texto);
+    return Text(
+        texto,
+    );
   }
 }
