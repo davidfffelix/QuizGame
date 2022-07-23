@@ -10,6 +10,10 @@ class Questao extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
         texto,
+        style: TextStyle(
+          fontSize: 28,
+        ),
+        textAlign: TextAlign.center,
     );
   }
 }
