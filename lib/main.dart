@@ -29,18 +29,9 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         body: Column(
           children: [
             Questao(perguntas[_perguntaSelecionada]),
-            Resposta(
-              child: Text('Resposta 1'),
-              onPressed: _responder,
-            ),
-            Resposta(
-              child: Text('Resposta 2'),
-              onPressed: _responder,
-            ),
-            Resposta(
-              child: Text('Resposta 3'),
-              onPressed: _responder,
-            ),
+            Resposta('Resposta 1'),
+            Resposta('Resposta 2'),
+            Resposta('Resposta 3'),
           ],
         ),
       ),
