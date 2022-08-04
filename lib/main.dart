@@ -11,7 +11,6 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
     setState((){
       _perguntaSelecionada++;
     });
-    print(_perguntaSelecionada);
   }
 
   @override

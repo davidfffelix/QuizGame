@@ -21,7 +21,7 @@ class Resposta extends StatelessWidget {
         child: Text(
             texto
         ),
-        onPressed: () {},
+        onPressed: quandoSelecionado,
       ),
     );
   }
