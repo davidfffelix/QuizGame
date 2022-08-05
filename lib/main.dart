@@ -15,7 +15,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
 
   @override
   Widget build(BuildContext context) {
-    final  perguntas = [
+    final perguntas = [
         {
           'texto': 'Qual é sua cor favorita?',
           'respostas': ['Preto', 'Vermelho', 'Verde', 'Branco'],
@@ -31,6 +31,10 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         'respostas': ['Maria', 'João', 'Léo', 'Pedro'],
         },
       ];
+
+       for(var textoResp in perguntas[_perguntaSelecionada].cast()['respostas']) {
+         print(textoResp);
+       }
 
     return MaterialApp(
       home: Scaffold(
