@@ -15,7 +15,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, Object>> perguntas = [
+    final  perguntas = [
         {
           'texto': 'Qual é sua cor favorita?',
           'respostas': ['Preto', 'Vermelho', 'Verde', 'Branco'],
@@ -30,7 +30,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         'texto': 'Qual é seu instrutor favorito?',
         'respostas': ['Maria', 'João', 'Léo', 'Pedro'],
         },
-    ];
+      ];
 
     return MaterialApp(
       home: Scaffold(
