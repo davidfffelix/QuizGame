@@ -32,7 +32,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         },
       ];
 
-       
+      List<Widget> respostas = [];
 
     return MaterialApp(
       home: Scaffold(
