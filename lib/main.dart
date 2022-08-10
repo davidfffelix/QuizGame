@@ -32,7 +32,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         },
       ];
 
-      List<Widget> respostas = [];
+      List<Widget> widgets = [];
 
     return MaterialApp(
       home: Scaffold(
@@ -42,7 +42,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Conexão entre estado e 
         body: Column(
           children: [
             Questao(perguntas[_perguntaSelecionada]['texto'].toString()),
-            ...respostas,
+            ...widgets,
           ],
         ),
       ),
